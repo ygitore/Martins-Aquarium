@@ -4,6 +4,8 @@ import initializeDetailButtonEventsBetty from './betty-dialog.js';
 import initializeDetailButtonEventsDory from './dory-dialog.js';
 import initializeDetailButtonEventsLusk from './lusk-dialog.js';
 import initializeDetailButtonEventsPink from './pink-dialog.js';
+import initializeDetailButtonEventsNemo from './nemo-dialog.js';
+initializeDetailButtonEventsNemo();
 initializeDetailButtonEventsPink();
 initializeDetailButtonEventsLusk();
 initializeDetailButtonEventsDory();

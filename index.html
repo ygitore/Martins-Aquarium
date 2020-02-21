@@ -16,37 +16,39 @@
         </nav>
     </header>
 
-    <main class="container">
-
-        <!-- Hey look! It's an HTML representation of one of Martin's fish -->
-        <div class="fish">
-            <div>
-                <img class="fish__image"
-                    src="https://3.imimg.com/data3/IW/XT/GLADMIN-105863/fish-125x125.jpg"
-                    alt="">
-            </div>
-            <div class="fish__name">Bart</div>
-            <div>
-                <button id="button--bart">Details</button>
-            </div>
-
-            <dialog class="dialog--fish" id="details--bart">
-                <div>Species: Orange Clownfish</div>
-                <div>Location: Caribbean</div>
-                <div>Length: 3</div>
-                <div>Food: Algae, crustaceans</div>
-
-                <button class="button--close" id="close-bart">Close Dialog</button>
-            </dialog>
-        </div>
-
+    <main class="container"> 
 
         <article class="fishList bordered">
-            <section class="fish">
-                <img class="fish__image" src="https://i.ytimg.com/vi/z_XlTRYLZ1Q/maxresdefault.jpg" />
-                <div class="fish__name">Betty</div>
+                <!-- Hey look! It's an HTML representation of one of Martin's fish -->
+            <div class="fish">
                 <div>
-                    <button id="button--betty">Details</button>
+                    <img class="fish__image"
+                        src="https://i.pinimg.com/originals/e4/30/3c/e4303c0523c47bfd353109a777cbe9ee.jpg"
+                        alt="">
+                </div>
+                <div class="fish-name-details">
+                    <div class="fd fish__name">Bart</div>
+                    <div>
+                        <button id="button--bart" class="fd btn-details">Details</button>
+                    </div>    
+                </div>
+                
+                <dialog class="dialog--fish" id="details--bart">
+                    <div>Species: Orange Clownfish</div>
+                    <div>Location: Caribbean</div>
+                    <div>Length: 3</div>
+                    <div>Food: Algae, crustaceans</div>
+
+                    <button class="button--close" id="close-bart">Close Dialog</button>
+                </dialog>
+            </div>
+            <div class="fish">
+                <img class="fish__image" src="https://i.ytimg.com/vi/z_XlTRYLZ1Q/maxresdefault.jpg" />
+                <div class="fish-name-details">
+                    <div class=" fd fish__name">Betty</div>
+                    <div>
+                        <button id="button--betty" class="fd btn-details">Details</button>
+                    </div>
                 </div>
                 <dialog class="dialog--betty" id="details--betty">
                     <div>Name: Betty</div>
@@ -56,12 +58,14 @@
                     <div>Harvested at: Cumberland River</div>
                     <button class="button--close-betty" id="close-betty">Close Dialog</button>
                 </dialog>
-            </section>
-            <section class="fish">
-                <img class="fish__image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7xhhlta3q-wVKpgzGdTlpAHaFj%26pid%3DApi&f=1" />
-                <div class="fish__name">Nemo</div>
-                <div>
-                    <button id="button-nemo">Details</button>
+            </div>
+            <div class="fish">
+                <img class="fish__image" src="https://www.montereybayaquarium.org/-/m/images/animal-guide/fishes/great-white-shark-on-blue.jpg?bc=white&h=729&mh=916&mw=1222&w=969&usecustomfunctions=1&cropx=230&cropy=70" />
+                <div class="fish-name-details">
+                    <div class="fd fish__name">Nemo</div>
+                    <div>
+                        <button id="button--nemo" class="fd btn-details">Details</button>
+                    </div>
                 </div>
                 <dialog class="dialog--nemo" id="details--nemo">
                     <div>Name: Nemo</div>
@@ -71,12 +75,14 @@
                     <div>Harvested at: Great Barrier Reef</div>
                     <button class="button--close-nemo" id="close-nemo">Close Dialog</button>
                 </dialog>
-            </section>
-            <section class="fish">
+            </div>
+            <div class="fish">
                 <img class="fish__image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthedisneyinme.files.wordpress.com%2F2013%2F12%2Fdory.jpg&f=1&nofb=1" />
-                <div class="fish__name">Dory</div>
-                <div>
-                    <button id="button--dory">Details</button>
+                <div class="fish-name-details">
+                    <div class="fd fish__name">Dory</div>
+                    <div>
+                        <button id="button--dory" class="fd btn-details">Details</button>
+                    </div>
                 </div>
                 <dialog class="dialog--dory" id="details--dory">
                         <div>Name: Dory</div>
@@ -86,13 +92,16 @@
                         <div>Harvested at: New Zealand Sea</div>
                         <button class="button--close-dory" id="close-dory">Close Dialog</button>
                 </dialog>
-            </section>
-            <section class="fish">
+            </div>
+            <div class="fish">
                 <img class="fish__image" src="https://i.ytimg.com/vi/z_XlTRYLZ1Q/maxresdefault.jpg" />
-                <div class="fish__name">Nat</div>
-                <div>
-                    <button id="button--nat">Details</button>
+                <div class="fish-name-details">
+                    <div class="fd fish__name">Nat</div>
+                    <div>
+                        <button id="button--nat" class="fd btn-details">Details</button>
+                    </div>
                 </div>
+                
                 <dialog class="fish__details" id="details--nat">
                     <div>Name: Nat</div>
                     <div>Length: 2 ft</div>
@@ -101,12 +110,15 @@
                     <div>Harvested at: Cumberland River</div>
                     <button class="button--close-nat" id="close-nat">Close Dialog</button>
                 </dialog>
-            </section>
-            <section class="fish">
+            </div>
+            <div class="fish">
                 <img class="fish__image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7xhhlta3q-wVKpgzGdTlpAHaFj%26pid%3DApi&f=1" />
-                <div class="fish__name">Pink</div>
-                <div>
-                    <button id="button--pink">Details</button>
+                <div class="fish-name-details">                    
+                    <div class="fd fish__name">Pink</div>
+                    <div>
+                        <button id="button--pink" class="fd btn-details">Details</button>
+                    </div>
+
                 </div>
                 <dialog class="dialog--pink" id="details--pink">
                     <div>Name: Pink</div>
@@ -116,13 +128,15 @@
                     <div>Harvested at: Cumberland River</div>
                     <button class="button--close-pink" id="close-pink">Close Dialog</button>
                 </dialog>
-            </section>
-            <section class="fish">
+            </div>
+            <div class="fish">
                 <img class="fish__image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthedisneyinme.files.wordpress.com%2F2013%2F12%2Fdory.jpg&f=1&nofb=1" />
-                <div class="fish__name">Lusk</div>
-                <div>
-                    <button id="button--lusk">Details</button>
-                </div>
+               <div class="fish-name-details">
+                    <div class="fd fish__name">Lusk</div>
+                    <div>
+                        <button id="button--lusk" class="fd btn-details">Details</button>
+                    </div>
+               </div>
                 <dialog class="dialog--lusk" id="details--lusk">
                     <div>Name: Lusk</div>
                     <div>Length: 2 ft</div>
@@ -131,15 +145,15 @@
                     <div>Harvested at: Cumberland River</div>
                     <button class="button--close-lusk" id="close-lusk">Close Dialog</button>
                 </dialog>
-            </section>
+            </div>
         </article>
         <aside class="tipList bordered">
             <header>
                 <h3>Martin's Tips</h3>
             </header>
-            <section class="tip">Make sure tank has water</section>
-            <section class="tip">Clean the poop out on a regular basis</section>
-            <section class="tip">Make sure to feed them daily</section>
+            <div class="tip">Make sure tank has water</div>
+            <div class="tip">Clean the poop out on a regular basis</div>
+            <div class="tip">Make sure to feed them daily</div>
         </aside>
     </main>
     <script type="module" src="./scripts/main.js"></script>

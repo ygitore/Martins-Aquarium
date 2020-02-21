@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .navigation {
@@ -14,23 +14,47 @@
 
 .fishList {
     flex-basis: 65%;
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
 }
 
 .fish__image {
-    width: 8rem;
-    height: 8rem;
+    width: 18rem;
+    height: 16rem;
 }
 
 .tipList {
-    flex-basis: 20%;
+    flex-basis: 30%;
 }
 
 .tip {
-    margin: 1rem 0 2rem 0;
+    margin: 0rem 4rem 0rem 1rem;
 }
 
 .bordered {
-    border: 1px dashed goldenrod;
+    border: 1px dashed rgb(50, 163, 93);
+}
+.fish{
+    margin: 10px;
+    flex-basis: 20%;
+}
+.fish-name-details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+.btn-details{
+    flex-basis: 50%;
+    background-color: rgb(135, 154, 161);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px ;
+    color: white;
+}
+h3{
+    text-align: center;
+    color: rgb(17, 83, 128);
 }
