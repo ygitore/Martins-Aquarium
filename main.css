@@ -1,36 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
+a{
+    text-decoration: none;
+}
 .navigation {
-    margin: 2em;
+    margin: 1em;
+    background-color: rgb(92, 146, 167);
+    width: 100%;
+    height: 60px;
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .navigation__link {
     padding: 0 1em 0 1em;
+    color: rgb(255, 255, 255);
+}
+.navigation__link:hover{
+    transform: translate(2px, 50px);
+    transition-delay: 0.5s;
+    border-bottom: 2px solid rgb(236, 184, 115);
 }
 
 .fishList {
     flex-basis: 65%;
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
 }
 
 .fish__image {
-    width: 8rem;
-    height: 8rem;
+    width: 18rem;
+    height: 16rem;
 }
 
 .tipList {
-    flex-basis: 20%;
+    flex-basis: 30%;
+    background-color: rgb(145, 127, 109);
 }
 
 .tip {
-    margin: 1rem 0 2rem 0;
+    margin: 0rem 4rem 0rem 1rem;
 }
 
 .bordered {
-    border: 1px dashed goldenrod;
+    border: 1px dashed rgb(189, 186, 40);
+}
+.fish{
+    margin: 10px;
+    flex-basis: 20%;
+}
+.fish-name-details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+.btn-details{
+    flex-basis: 50%;
+    background-color: rgb(111, 129, 126);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px ;
+    color: white;
+}
+h3{
+    text-align: center;
+    color: rgb(17, 83, 128);
 }
