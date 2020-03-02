@@ -1,5 +1,5 @@
-import initializeDetailButtonEvents from './dialog.js';
-import intializeFishList from './fishList.js ';
+import initializeDetailButtonEvents from '../dialog.js';
+import intializeFishList from '../fish/fishList.js';
 
 // initializeDetailButtonEventsNemo();
 // initializeDetailButtonEventsPink();
