@@ -6,49 +6,78 @@
  */
 const fishCollection = [
     {
-        name: "Bart",
-        image: 'https://static01.nyt.com/images/2016/05/15/opinion/sunday/15balcombe/15balcombe-articleLarge.jpg?quality=75&auto=webp&disable=upscale',
-        length:"52 ft",
-        location:'cumberland river',
-        food: ["algae", "crustaceans"],
-        Species: 'Longtooth Barracud'
-    },
-    {
         name: "Betty",
-        image: 'https://dtmag.com/wp-content/uploads/2019/06/mandarinfish-1050x700.jpg',
-        length:"25 ft",
-        location:'cumberland river',
-        food: ["algae", "crustaceans"],
-        Species: 'Longtooth Barracud'
+        image: "https://i.ytimg.com/vi/z_XlTRYLZ1Q/maxresdefault.jpg",
+        species: "Longtooth Barracuda",
+        location: "Cumberland River",
+        length: 10,
+        food: ["Squid"]
     },
     {
+        name: "Bart",
+        species: "Orange Clownfish",
+        image: "https://3.imimg.com/data3/IW/XT/GLADMIN-105863/fish-125x125.jpg",
+        location: "Caribbean",
+        length: 3,
+        food: ["Algae", "Crustaceans"]
+    },
+    {
+        length: 9,
+        species: "Clownfish",
+        food: ["Plankton"],
+        location: "Great Barrier Reef",
         name: "Nemo",
-        image: 'https://cdn0.wideopenpets.com/wp-content/uploads/2019/10/Fish-Names-770x405.png',
-        length:"42 ft",
-        location:'hatta river',
-        food: ["algae", "sama"],
-        Species: 'Longtooth Barracud'
+        image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7xhhlta3q-wVKpgzGdTlpAHaFj%26pid%3DApi&f=1"
     },
     {
+        image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthedisneyinme.files.wordpress.com%2F2013%2F12%2Fdory.jpg&f=1&nofb=1",
         name: "Dory",
-        image: 'https://www.montereybayaquarium.org/-/m/images/animal-guide/fishes/garibaldi.jpg?bc=white&h=749&mh=916&mw=1222&w=997&usecustomfunctions=1&cropx=9&cropy=18',
-        length:"24 ft",
-        location:'lombe river',
-        food: ["algae", "dember"],
-        Species: 'shsah Barracud'
-    },
-    {
-        name: "Nat",
-        image: 'https://thumbs-prod.si-cdn.com/n7Z82GD9Eav_CtpnzizNo66-dKc=/420x240/https://public-media.si-cdn.com/filer/d6/93/d6939718-4e41-44a8-a8f3-d13648d2bcd0/c3npbx.jpg',
-        length:"2 ft",
-        location:'kule river',
-        food: ["algae", "utta"],
-        Species: 'matta Barracud'
-    },
+        species: "Blue Tang",
+        location: "New Zealand Sea",
+        length: 11,
+        food: ["Clownfish"]
+    }
 ]
 
-
-// This is new code. Add this.
 export const useFish = () => {
     return fishCollection.slice()
+}
+
+export const mostHolyFish = () => {
+    // 3, 6, 9, 12, etc... fish
+    const holyFish = []
+
+    for (const fish of fishCollection) {
+        if (fish.length % 3 === 0) {
+            holyFish.push(fish)
+        }
+    }
+
+    return holyFish
+}
+
+export const soldierFish = () => {
+    // 5, 10, 15, 20, 25, etc... fish
+    const soldiers = []
+
+    for (const fish of fishCollection) {
+        if (fish.length % 5 === 0) {
+            soldiers.push(fish)
+        }
+    }
+
+    return soldiers
+}
+
+export const nonHolyFish = () => {
+    // Any fish not a multiple of 3 or 5
+    const regularFish = []
+
+    for (const fish of fishCollection) {
+        if (fish.length % 5 !== 0 && fish.length % 3 !== 0) {
+            regularFish.push(fish)
+        }
+    }
+
+    return regularFish
 }
