@@ -83,3 +83,18 @@ h3{
 .dialog--fish{
     text-align: center;
 }
+/* Location */
+.location-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: start;
+}
+.location{
+    flex-basis: 30%;
+    text-align: start;
+    border: 1px solid rgb(193, 202, 202);
+    margin: 10px;
+    padding: 5px;
+}

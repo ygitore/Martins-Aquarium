@@ -1,11 +1,3 @@
-import initializeDetailButtonEvents from '../dialog.js';
-import intializeFishList from '../fish/fishList.js';
+import Location from '../location/LocationList.js'
 
-// initializeDetailButtonEventsNemo();
-// initializeDetailButtonEventsPink();
-// initializeDetailButtonEventsLusk();
-// initializeDetailButtonEventsDory();
-// initializeDetailButtonEventsBetty();
-// initializeDetailButtonEventsNat();
-intializeFishList();
-initializeDetailButtonEvents();
+Location();
